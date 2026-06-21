@@ -1,5 +1,4 @@
 import type { Request, Response } from "express";
-import bcrypt from "bcrypt";
 import { generateToken } from "../utils/generateToken";
 
 import { prisma } from "../config/prisma";
