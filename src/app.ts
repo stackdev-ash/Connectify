@@ -8,6 +8,7 @@ import authRoutes from "./routes/auth.route";
 import postRoutes from "./routes/post.route";
 import commentRoutes from './routes/comment.route';
 import followRoutes from './routes/follow.routes';
+import userRoutes from './routes/user.route'
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/users", followRoutes);
+app.use("/api/users", userRoutes);
 
 export default app;
